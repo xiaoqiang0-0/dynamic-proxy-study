@@ -1,0 +1,9 @@
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "http://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+<aspectj>
+    <aspects>
+        <aspect name="com.xiaoqiang.dp.aspectj.ctw.ProfilingAspect"/>
+        <weaver options="-verbose -showWeaveInfo">
+            <include within="com.xiaoqiang.dp.model.Account"/>
+        </weaver>
+    </aspects>
+</aspectj>
